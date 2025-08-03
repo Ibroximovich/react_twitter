@@ -1,6 +1,6 @@
 
-import { BookmarksIcon, HomeIcon, ListIcon, MessagesIcon, MoreIcon, NotificationIcon, ProfileIcon } from "../assets/icons";
-import { Bookmarks, Explore, Home,Lists,Messages,More,Notifications, Profile } from "../pages";
+import { BookmarksIcon, ExploreIcon, HomeIcon, ListIcon, MessagesIcon, MoreIcon, NotificationIcon, ProfileIcon } from "../assets/icons";
+import {Explore, Bookmarks, Home,Lists,Messages,More,Notifications, Profile } from "../pages";
 import { PATH } from "./path";
 
 export const Routelist = [
@@ -9,6 +9,7 @@ export const Routelist = [
         path:PATH.main,
         title:'Home',
         icon:<HomeIcon/>,
+        activeIcon:<HomeIcon active={true}/>,
         element:<Home/>,
         children:[]
     },
@@ -16,7 +17,8 @@ export const Routelist = [
         id:2,
         path:PATH.explore,
         title:'Explore',
-        icon:null,
+        icon:<ExploreIcon/>,
+         activeIcon:<ExploreIcon active={true}/>,
         element:<Explore/>,
         children:[]
     },
@@ -25,6 +27,7 @@ export const Routelist = [
         path:PATH.notifications,
         title:'Notifications',
         icon:<NotificationIcon/>,
+        activeIcon:<NotificationIcon active={true}/>,
         element:<Notifications/>,
         children:[]
     },
@@ -33,6 +36,7 @@ export const Routelist = [
         path:PATH.messages,
         title:'Messages',
         icon:<MessagesIcon/>,
+         activeIcon:<MessagesIcon active={true}/>,
         element:<Messages/>,
         children:[]
     },
@@ -41,6 +45,7 @@ export const Routelist = [
         path:PATH.bookmarks,
         title:'Bookmarks',
         icon:<BookmarksIcon/>,
+         activeIcon:<BookmarksIcon active={true}/>,
         element:<Bookmarks/>,
         children:[]
     },
@@ -49,6 +54,7 @@ export const Routelist = [
         path:PATH.lists,
         title:'Lists',
         icon:<ListIcon/>,
+         activeIcon:<ListIcon active={true}/>,
         element:<Lists/>,
         children:[]
     },
@@ -57,6 +63,7 @@ export const Routelist = [
         path:PATH.profile,
         title:'Profile',
         icon:<ProfileIcon/>,
+         activeIcon:<ProfileIcon active={true}/>,
         element:<Profile/>,
         children:[]
     },
@@ -65,6 +72,7 @@ export const Routelist = [
         path:PATH.more,
         title:'More',
         icon:<MoreIcon/>,
+         activeIcon:<MoreIcon active={true}/>,
         element:<More/>,
         children:[]
     },
